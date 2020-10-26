@@ -1,0 +1,11 @@
+<div class="contents row">
+  <div class="container">
+    <h3>入力する</h3>
+    <%= form_with(model: @medicina, local: true) do |form| %>
+    <%= form.text_field :name, placeholder: "利用者名" %>
+      <%= form.text_field :name, placeholder: "薬の有無" %>
+      <%= form.text_area :text, placeholder: "備考", rows: "10" %>
+      <%= form.submit "入力" %>
+    <% end %>
+  </div>
+</div>

@@ -1,11 +1,19 @@
-<div class="contents row">
-  <div class="container">
-    <h3>入力する</h3>
+<div >
+  <%# <div class="container"> %>
+    <%# <h3>入力する</h3> %>
     <%= form_with(model: @medicina, local: true) do |form| %>
-    <%= form.text_field :name, placeholder: "利用者名" %>
-      <%= form.text_field :name, placeholder: "薬の有無" %>
-      <%= form.text_area :text, placeholder: "備考", rows: "10" %>
+      <%= form.text_field :medicina1, placeholder: "利用者名" %>
+      <%= form.text_field :medicina2, placeholder: "薬の有無" %>
+      <%= form.text_area :medicina3, placeholder: "備考", rows: "10" %>
+
+      <%= form.text_field :medicina4, placeholder: "利用者名" %>
+      <%= form.text_field :medicina5, placeholder: "薬の有無" %>
+      <%= form.text_area :medicina6, placeholder: "備考", rows: "10" %>
+
+      <%= form.text_field :medicina7, placeholder: "利用者名" %>
+      <%= form.text_field :medicina8, placeholder: "薬の有無" %>
+      <%= form.text_area :medicina9, placeholder: "備考", rows: "10" %>
       <%= form.submit "入力" %>
     <% end %>
-  </div>
+  <%# </div> %>
 </div>

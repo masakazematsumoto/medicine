@@ -1,26 +1,39 @@
-
+<%# <%if @medicinas.present?%> 
+<% @medicinas.each do |medicina| %>
 <table border="1" id="medicinaTable">
 
   <tr>
-    <th>利用者名</th> <th>薬の有無</th> <th>備考（薬の変更等）</th>
+    <th>利用者名</th>
+    <td><%= medicina.medicina1 %></td>
+    <th>薬の有無</th>
+    <td><%= medicina.medicina2 %></td>
+    <th>備考（薬の変更等）</th>
+    <td><%= medicina.medicina3 %></td>
   </tr>
 
   <tr>
-    <td><input type="text" size="45" maxlength="50" name="medicina1" value=""></td>
-    <td><input type="text" size="45" maxlength="50" name="medicina2" value=""></td>
-    <td><input type="text" size="45" maxlength="50" name="medicina3" value=""></td>
+    <th>利用者名</th>
+    <td><%= medicina.medicina4 %></td>
+    <th>薬の有無</th>
+    <td><%= medicina.medicina5 %></td>
+    <th>備考（薬の変更等）</th>
+    <td><%= medicina.medicina6 %></td>
   </tr>
 
   <tr>
-    <td><input type="text" size="45" maxlength="50" name="medicina4" value=""></td>
-    <td><input type="text" size="45" maxlength="50" name="medicina5" value=""></td>
-    <td><input type="text" size="45" maxlength="50" name="medicina6" value=""></td>
+    <th>利用者名</th>
+    <td><%= medicina.medicina7 %></td>
+    <th>薬の有無</th>
+    <td><%= medicina.medicina8 %></td>
+    <th>備考（薬の変更等）</th>
+    <td><%= medicina.medicina9 %></td>
   </tr>
-
-  <tr>
-    <td><input type="text" size="45" maxlength="50" name="medicina7" value=""></td>
-    <td><input type="text" size="45" maxlength="50" name="medicina8" value=""></td>
-    <td><input type="text" size="45" maxlength="50" name="medicina9" value=""></td>
-  </tr>
-
+  <%# <% end %> 
 </table>
+<% end %>
+
+<a href="/medicinas/new">
+  <div class='purchase-btn'>
+    <span class='purchase-btn-text'>入力する</span>
+  </div>
+</a>

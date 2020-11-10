@@ -1,24 +1,51 @@
-# README
+オリジナルアプリ　medicine
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+heloku　
+https://medicine-29331.herokuapp.com/
+GitHub
+https://github.com/masakazematsumoto/medicine.git
+basic認証
+username == 'abc' && password == '1234'
 
-Things you may want to cover:
+・Rubyバージョン
+   ruby 2.6.5p114
 
-* Ruby version
+・薬情報共有アプリ
+　高齢者福祉施設の中でもデイサービスにて使用することを想定。現状、自分が現在勤めているデイサービスでは利用者様宅へお迎えに行ったスタッフが薬が必要な利用者様に対して持参していただいているかを確認し、施設に戻った後、看護師がさらにそれを確認するという手順を踏んでいる。しかし、現状これでは薬の確認作業に時間がかかり過ぎてしまう。時間がかかるということは利用者様へのバイタル計測が遅れ、その後の入浴などの時間も全ておしてしまう。といった問題が起こる。そこで、タブレットを導入した仮定で送迎業務のスタッフと施設にいる看護師が見ることができる薬情報の共有アプリがあれば、この問題を解決できるのではないかと考え、アプリを作成した。
+　作成期間 2020/10/21 ~ 2020/11/5
 
-* System dependencies
+・主な使用言語
+　Ruby
 
-* Configuration
+・ 機能紹介
+　URLにアクセスすると、トップページに利用者名、薬の有無、備考（薬の変更等）の表が表示される。
+　入力ボタンを押すと、表の記入画面へ遷移。情報を入力後、入力ボタンを押すとトップページに遷移。入力した情報が入力されている。
 
-* Database creation
+・サイトURL紹介
+　デプロイ：heroku
+　アドレス： https://medicine-29331.herokuapp.com/
 
-* Database initialization
+・Basic認証
+　ユーザーネーム：abc
+　パスワード：1234
 
-* How to run the test suite
+・追加実装予定
+　ユーザー管理機能
+　ゲスト管理機能
+　画像表示機能
+　
+・データベース
+　|種類|Column|Type|
+　|:----|:----|:----|:----|
+　| |利用者名|medicina1|text|
+　| |薬の有無|medicina2|text|
+　| |備考（薬の変更等）|medicina3|text|
+　| |利用者名|medicina4|text|
+　| |薬の有無|medicina5|text|
+　| |備考（薬の変更等）|medicina6|text|
+　| |利用者名|medicina7|text|
+　| |薬の有無|medicina8|text|
+　| |備考（薬の変更等）|medicina9|text|
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+・作者
+　Masakaze Matsumoto

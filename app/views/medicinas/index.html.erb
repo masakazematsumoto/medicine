@@ -1,4 +1,5 @@
 <%# <%if @medicinas.present?%> 
+<%= link_to current_user.name, edit_user_path(current_user) %>
 <% @medicinas.each do |medicina| %>
 <table border="1" id="medicinaTable">
 

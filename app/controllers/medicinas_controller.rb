@@ -17,15 +17,15 @@ class MedicinasController < ApplicationController
     end
   end
 
-  def show
-    @medicina = Medicina.show(medicina_params)
-  end
+  # def show
+  #   @medicina = Medicina.show(medicina_params)
+  # end
 
-  def edit
-    if user_signed_in? && current_user.id != @item.user_id
-      redirect_to root_path
-    end
-  end
+  # def edit
+  #   if user_signed_in? && current_user.id != @item.user_id
+  #     redirect_to root_path
+  #   end
+  # end
 
   def medicina_params
     params.require(:medicina).permit(:medicina1, :medicina2, :medicina3, :medicina4, :medicina5, :medicina6, :medicina7, :medicina8, :medicina9 )

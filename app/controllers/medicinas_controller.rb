@@ -17,6 +17,9 @@ class MedicinasController < ApplicationController
     end
   end
 
+  # def destroy
+  #  @medicina = Medicina.destroy(medicina_params)
+  # end
   # def show
   #   @medicina = Medicina.show(medicina_params)
   # end
